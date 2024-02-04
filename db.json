@@ -1,14 +1,74 @@
 {
-    "posts": [
-      { "id": 1, "title": "Post 1" },
-      { "id": 2, "title": "Post 2" },
-      { "id": 3, "title": "Post 3" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 },
-      { "id": 2, "body": "some comment", "postId": 1 }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
-  }
+    "tasks": [
+        { 
+            "id": 1, 
+            "title": "Task Number 1",
+            "description": "You need to do this.",
+            "priority": 1,
+            "status": "new"
+        },
+        { 
+            "id": 2, 
+            "title": "Task Number 2",
+            "description": "You need to do that.",
+            "priority": 4,
+            "status": "resolved"
+        },
+        { 
+            "id": 3, 
+            "title": "Task Number 3",
+            "description": "You need to do this and that.",
+            "priority": 3,
+            "status": "onhold"
+        },
+        { 
+            "id": 4, 
+            "title": "Task Number 4",
+            "description": "You need to do this and that and then this.",
+            "priority": 2,
+            "status": "active"
+        },
+        { 
+            "id": 5, 
+            "title": "Task Number 5",
+            "description": "You need to do this and that and then that.",
+            "priority": 2,
+            "status": "active"
+        },
+        { 
+            "id": 6, 
+            "title": "Task Number 6",
+            "description": "You need to do this.",
+            "priority": 1,
+            "status": "new"
+        },
+        { 
+            "id": 7, 
+            "title": "Task Number 7",
+            "description": "You need to do that.",
+            "priority": 4,
+            "status": "resolved"
+        },
+        { 
+            "id": 8, 
+            "title": "Task Number 8",
+            "description": "You need to do this and that.",
+            "priority": 3,
+            "status": "onhold"
+        },
+        { 
+            "id": 9, 
+            "title": "Task Number 9",
+            "description": "You need to do this and that and then this.",
+            "priority": 2,
+            "status": "active"
+        },
+        { 
+            "id": 10, 
+            "title": "Task Number 10",
+            "description": "You need to do this and that and then that.",
+            "priority": 2,
+            "status": "active"
+        }
+    ]
+}
