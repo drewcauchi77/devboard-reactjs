@@ -2,70 +2,70 @@
     "tasks": [
         { 
             "id": 1, 
-            "title": "Task Number 1",
+            "title": "Update NPM dependencies to the latest package versions",
             "description": "You need to do this.",
             "priority": 1,
             "status": "new"
         },
         { 
             "id": 2, 
-            "title": "Task Number 2",
+            "title": "Make the styling of the header better, there is a lot of confusion",
             "description": "You need to do that.",
             "priority": 4,
             "status": "resolved"
         },
         { 
             "id": 3, 
-            "title": "Task Number 3",
+            "title": "Create a new payment integration with Crypto on our site",
             "description": "You need to do this and that.",
             "priority": 3,
             "status": "onhold"
         },
         { 
             "id": 4, 
-            "title": "Task Number 4",
+            "title": "Make sure that the checkout shows properly for all the customers",
             "description": "You need to do this and that and then this.",
             "priority": 2,
             "status": "active"
         },
         { 
             "id": 5, 
-            "title": "Task Number 5",
+            "title": "Bug: Users on iphone cannot change their email address when registering",
             "description": "You need to do this and that and then that.",
             "priority": 2,
             "status": "active"
         },
         { 
             "id": 6, 
-            "title": "Task Number 6",
+            "title": "When an order is ongoing and an item goes out of stock, customer needs to be notified",
             "description": "You need to do this.",
             "priority": 1,
             "status": "new"
         },
         { 
             "id": 7, 
-            "title": "Task Number 7",
+            "title": "Update all the footer pages, there are broken links",
             "description": "You need to do that.",
             "priority": 4,
             "status": "resolved"
         },
         { 
             "id": 8, 
-            "title": "Task Number 8",
+            "title": "Stock system not updating correctly",
             "description": "You need to do this and that.",
             "priority": 3,
             "status": "onhold"
         },
         { 
             "id": 9, 
-            "title": "Task Number 9",
+            "title": "Some items showing out of stock even though they are in stock",
             "description": "You need to do this and that and then this.",
             "priority": 2,
             "status": "active"
         },
         { 
             "id": 10, 
-            "title": "Task Number 10",
+            "title": "Give the client a handover on how to manage and update the site",
             "description": "You need to do this and that and then that.",
             "priority": 2,
             "status": "active"
