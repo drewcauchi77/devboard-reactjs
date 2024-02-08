@@ -7,13 +7,13 @@ const TasksList = (props: I_TasksListProps) => {
     return (
         <div className="task-list">
             <div className="task-status">{ taskStatus }</div>
-            {tasks && tasks.length > 0 ? (
-                tasks.map((task, index) => (
-                    <Task key={ index } task={ task } />
+            { tasks && tasks.length > 0 ? (
+                tasks.map((task) => (
+                    <Task key={ task.id } task={ task } />
                 )
             )) : (
                 <span className="empty-tasks">No Tasks Yet</span>
-            )}
+            ) }
         </div>
     )
 }

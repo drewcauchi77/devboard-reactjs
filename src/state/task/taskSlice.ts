@@ -3,6 +3,7 @@ import { I_TaskState } from '../../typings/interfaces';
 
 const initialState: I_TaskState = {
     tasks: [],
+    filteredTasks: {},
 };
 
 const taskSlice = createSlice({
@@ -11,10 +12,13 @@ const taskSlice = createSlice({
     reducers: {
         setTasks: (state, action) => {
             state.tasks = action.payload;
-        }
+        },
+        setFilteredTasksByStatus: (state, action) => {
+            state.filteredTasks = action.payload;
+        },
     }
 });
 
-export const { setTasks } = taskSlice.actions;
+export const { setTasks, setFilteredTasksByStatus } = taskSlice.actions;
 
 export default taskSlice.reducer;

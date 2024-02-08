@@ -15,7 +15,3 @@ export type T_NavbarItemProps = {
     isAction: boolean,
     onClick: any,
 };
-
-export type T_FilteredTasks = {
-    [key: string]: T_Tasks,
-};

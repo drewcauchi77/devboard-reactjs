@@ -12,9 +12,9 @@ const Navbar = () => {
     return (
         <nav className={ `navbar${ !isMenuCollapsed ? ' open' : '' }` }>
             <div className="inner-navbar">
-                <NavbarItem link='/' text='Tasks' icon={ <FaTasks /> } />
+                <NavbarItem link='/tasks' text='Tasks' icon={ <FaTasks /> } />
                 <NavbarItem link='/settings' text='Settings' icon={ <FaGear /> } />
-                <NavbarItem link='/about' text='About' icon={ <FaPerson /> } />
+                <NavbarItem link='/' text='About' icon={ <FaPerson /> } />
             </div>
             <div className="lower-menu">
                 <NavbarItem text='Collapse Menu' isAction={ true } icon={ isMenuCollapsed ? <FaAnglesRight /> : <FaAnglesLeft /> } onClick={ () => dispatch(collapseMenu(!isMenuCollapsed)) } />

@@ -1,3 +1,7 @@
+.tasks-board {
+    padding-bottom: 20px;
+}
+
 .task-list {
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin: 20px 20px 20px 10px;
@@ -21,12 +25,20 @@
 
 .task {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 10px;
     margin: 20px 0 0;
+    background-color: rgba(128, 128, 128, 0.12);
+}
+
+.task .task-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #1e1e1e;
 }
 
 .task-upper {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .task-upper .task-title {
@@ -68,6 +80,64 @@
     background-color: purple;
 }
 
+.single-task-page {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    margin-right: 10px;
+}
+
+.single-task-page .single-task-details {
+    flex-grow: 1;
+}
+
+.single-task-page h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.single-task-page .task-minor-details {
+    display: flex;
+    grid-gap: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.single-task-page .task-description {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.single-task-page .task-description p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.single-task-page .other-tasks {
+    width: 100%;
+    margin-right: 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.single-task-page .other-tasks h3 {
+    margin: 0;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.single-task-page .other-tasks .no-tasks {
+    text-align: center;
+    padding-top: 20px;
+    font-style: italic;
+    display: block;
+}
+
 @media only screen and (min-width: 992px) {
     .tasks-board {
         display: flex;
@@ -75,6 +145,16 @@
 
     .tasks-board .task-list {
         width: 20%;
+    }
+
+    .single-task-page {
+        flex-direction: row;
+    }
+
+    .single-task-page .other-tasks {
+        width: 300px;
+        border-top: unset;
+        flex: none;
     }
 }
 
