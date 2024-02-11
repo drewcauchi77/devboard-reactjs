@@ -2,7 +2,6 @@ import { T_Tasks } from './types';
 
 export interface I_TaskState {
     tasks: T_Tasks,
-    filteredTasks: I_FilteredTasks,
 };
 
 export interface I_StatusState {

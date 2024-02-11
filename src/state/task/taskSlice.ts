@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { I_TaskState } from '../../typings/interfaces';
+import { createSelector, createSlice } from '@reduxjs/toolkit';
+import { I_TaskState, I_FilteredTasks } from '../../typings/interfaces';
+import { RootState } from '../store';
 
 const initialState: I_TaskState = {
     tasks: [],
-    filteredTasks: {},
 };
 
 const taskSlice = createSlice({
@@ -13,12 +13,31 @@ const taskSlice = createSlice({
         setTasks: (state, action) => {
             state.tasks = action.payload;
         },
-        setFilteredTasksByStatus: (state, action) => {
-            state.filteredTasks = action.payload;
+        addTask: (state, action) => {
+            state.tasks.push(action.payload);
         },
     }
 });
 
-export const { setTasks, setFilteredTasksByStatus } = taskSlice.actions;
+export const getTasks = (state: RootState) => state.task.tasks;
+
+export const getFilteredTasksByStatus = createSelector(
+    [getTasks],
+    (tasks) => {
+        const filteredTasksByStatus: I_FilteredTasks = { new: [], active: [], resolved: [], onhold: [], closed: [] };
+
+        tasks.forEach((task) => {
+            if (!filteredTasksByStatus[task.status]) {
+                filteredTasksByStatus[task.status] = [task];
+            } else {
+                filteredTasksByStatus[task.status].push(task);
+            }
+        });
+
+        return filteredTasksByStatus;
+    }
+);
+
+export const { setTasks, addTask } = taskSlice.actions;
 
 export default taskSlice.reducer;

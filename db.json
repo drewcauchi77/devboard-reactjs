@@ -4,14 +4,14 @@
             "id": 1, 
             "title": "Implement Responsive Grid Layout for Product Display",
             "description": "Develop a responsive grid layout to showcase products throughout the shop, ensuring optimal display and user experience across various devices and screen sizes.<br><br>Use CSS Grid or Flexbox to create a responsive layout. Test on various devices and screen resolutions to ensure consistent display.",
-            "priority": 1,
+            "priority": 4,
             "status": "new"
         },
         { 
             "id": 2, 
             "title": "Enhance Product Image Gallery with Carousel and Zoom Features",
             "description": "Improve the product image gallery to allow users to view multiple product images in a carousel or slider. Enhance the user experience by adding features such as zoom and lightbox functionality.<br><br>Integrate a popular JavaScript library like Slick or Fancybox to create a dynamic and interactive image gallery. Ensure smooth transitions and intuitive navigation.",
-            "priority": 4,
+            "priority": 5,
             "status": "resolved"
         },
         { 
@@ -25,14 +25,14 @@
             "id": 4, 
             "title": "Implement Checkout Form Validation for Data Integrity",
             "description": "Implement client-side form validation for the checkout process to ensure data integrity and improve usability. Validate fields such as email, phone number, shipping address, and payment details.<br><br>Utilize HTML5 form validation attributes and JavaScript validation methods to validate user input. Provide clear error messages and feedback to guide users through the checkout process.",
-            "priority": 2,
+            "priority": 1,
             "status": "active"
         },
         { 
             "id": 5, 
             "title": "Develop Advanced Product Filtering and Sorting Options",
             "description": "Develop filtering and sorting functionality to help users quickly find products based on various criteria such as price, category, brand, and popularity.<br><br>Implement filter and sort options using JavaScript or a frontend framework like React. Allow users to apply multiple filters and dynamically update the product list.",
-            "priority": 2,
+            "priority": 4,
             "status": "active"
         },
         { 
@@ -46,21 +46,21 @@
             "id": 7, 
             "title": "Integrate Secure Payment Gateway for Seamless Transactions",
             "description": "Integrate a payment gateway (e.g., Stripe, PayPal) to enable secure online payments for purchases. Implement features such as one-click checkout and saved payment methods.<br><br>Follow the documentation provided by the payment gateway provider to integrate their API into the ecommerce platform. Ensure compliance with security standards (e.g., PCI DSS).",
-            "priority": 4,
+            "priority": 1,
             "status": "resolved"
         },
         { 
             "id": 8, 
             "title": "Enable User-generated Product Reviews and Ratings",
             "description": "Implement a feature that allows users to leave reviews and ratings for products. Display average ratings and user reviews to help other shoppers make informed decisions.<br><br>Develop a review submission form and backend API to store and retrieve review data. Use a rating component (e.g., React Star Ratings) to collect and display ratings.",
-            "priority": 3,
+            "priority": 2,
             "status": "onhold"
         },
         { 
             "id": 9, 
             "title": "Implement Multilingual Support and Localization for Global Reach",
             "description": "Add support for multiple languages and regions to make the ecommerce platform accessible to a global audience. Enable users to switch between languages and currencies.<br><br>Implement localization features using libraries like react-i18next or Intl API for JavaScript. Store translated content in language-specific JSON files or a localization database.",
-            "priority": 2,
+            "priority": 3,
             "status": "active"
         },
         { 

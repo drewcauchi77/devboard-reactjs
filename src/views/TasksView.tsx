@@ -1,16 +1,16 @@
 import '../assets/tasks.css';
 import { useSelector } from 'react-redux';
-import { RootState } from '../state/store';
-import TasksList from '../components/Tasks/TasksList';
+import { getFilteredTasksByStatus } from '../state/task/taskSlice';
+import TasksList from '../components/task/TasksList';
 
 const HomeView = () => {
-    const filteredTasks = useSelector((state: RootState) => state.task.filteredTasks);
+    const filteredTasksByStatus = useSelector(getFilteredTasksByStatus);
 
     return (
         <div className="tasks-board">
-            { filteredTasks && (
-                Object.keys(filteredTasks).map((task, index) => (
-                    <TasksList tasks={ filteredTasks[task] } taskStatus={ task } key={ index } />
+            { filteredTasksByStatus && (
+                Object.keys(filteredTasksByStatus).map((task, index) => (
+                    <TasksList tasks={ filteredTasksByStatus[task] } taskStatus={ task } key={ index } />
                 ))
             ) }
         </div>

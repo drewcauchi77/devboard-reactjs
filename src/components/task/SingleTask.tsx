@@ -30,7 +30,7 @@ const SingleTask = () => {
                         </div>
                         <div className="task-description">
                             <em>Description</em>
-                            <p>{ singleTask.description }</p>
+                            <p dangerouslySetInnerHTML={{ __html: singleTask.description }}></p>
                         </div>
                     </div>
                     <div className="other-tasks">

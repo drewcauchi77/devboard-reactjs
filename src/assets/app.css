@@ -19,6 +19,21 @@ body {
     margin-left: 260px;
 }
 
+.btn {
+    background-color: rgba(30, 30, 30, 0.95);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: 0.2s all;
+}
+
+.btn:hover {
+    background-color: rgba(30, 30, 30, 1);
+}
+
 @media only screen and (min-width: 1670px) {
     .container {
         margin: 0 auto;
